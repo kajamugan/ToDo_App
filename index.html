@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;600;700&family=Roboto:wght@300;400&family=Rubik:wght@500&display=swap" rel="stylesheet">    
+    <title>Coda ToDo</title>
+    <style>
+        #container{
+            width: 33vw;
+            margin: 4rem auto;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        input[type="text"]{
+            height: 50px;
+            font-size: 20px;
+            width: 100%;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        li{
+            list-style: none;
+            font-size: 25px;
+        }
+        input[type="checkbox"]{
+            zoom: 1.5;
+        }
+        .completed{
+            text-decoration: line-through;
+            color: gray;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <input id="addTodo" type="text" placeholder="Enter your ToDo...">
+        <ul id="todoList">
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
